@@ -61,7 +61,10 @@
     "test",
     "unit",
     "stub",
-    "webgl"
+    "webgl",
+    "pixi",
+    "pixi.js",
+    "pixijs"
   ],
   "author": "adamfsk",
   "license": "MIT",
