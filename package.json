@@ -1,6 +1,6 @@
 {
   "name": "jest-webgl-canvas-mock",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Mock both 2D and WebGL contexts in Jest.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",

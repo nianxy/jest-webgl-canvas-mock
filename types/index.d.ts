@@ -51,4 +51,9 @@ declare global {
      */
     __getPath(): CanvasRenderingContext2DEvent[];
   }
+
+  interface WeblGLRenderingContext {
+    getExtension(ext: string): any;
+    getParameter(param: string): any;
+  }
 }

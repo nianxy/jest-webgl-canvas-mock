@@ -4,6 +4,7 @@ import parseColor from 'parse-color';
 import cssfontparser from 'cssfontparser';
 import TextMetrics from './TextMetrics';
 import createCanvasEvent from '../mock/createCanvasEvent';
+// import HTMLCanvasElement from "./HTMLCanvasElement";
 
 function parseCSSColor(value) {
   const result = parseColor(value);
