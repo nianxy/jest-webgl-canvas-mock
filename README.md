@@ -1,11 +1,11 @@
-# jest-canvas-webgl-mock
+# jest-webgl-canvas-mock
 
 > Mock `canvas` and `WebGL` when running unit test cases with jest.
 
-[![Build Status](https://travis-ci.org/adamfsk/jest-canvas-mock.svg?branch=master)](https://travis-ci.org/hustcc/jest-canvas-mock)
-[![Coverage Status](https://coveralls.io/repos/github/adamfsk/jest-canvas-webgl-mock/badge.svg?branch=master)](https://coveralls.io/github/adamfsk/jest-canvas-webgl-mock)
-[![npm](https://img.shields.io/npm/v/jest-canvas-mock.svg)](https://www.npmjs.com/package/jest-canvas-mock)
-[![npm](https://img.shields.io/npm/dm/jest-canvas-mock.svg)](https://www.npmjs.com/package/jest-canvas-mock)
+[![Build Status](https://travis-ci.org/adamfsk/jest-webgl-canvas-mock.svg?branch=master)](https://travis-ci.org/adamfsk/jest-webgl-canvas-mock)
+[![Coverage Status](https://coveralls.io/repos/github/adamfsk/jest-webgl-canvas-mock/badge.svg?branch=master)](https://coveralls.io/github/adamfsk/jest-webgl-canvas-mock)
+[![npm](https://img.shields.io/npm/v/jest-webgl-canvas-mock.svg)](https://www.npmjs.com/package/jest-webgl-canvas-mock)
+[![npm](https://img.shields.io/npm/dm/jest-webgl-canvas-mock.svg)](https://www.npmjs.com/package/jest-webgl-canvas-mock)
 
 ## Disclaimer
 
@@ -16,28 +16,28 @@ This project is a simple merge of [jest-canvas-mock](https://github.com/hustcc/j
 This should only be installed as a development dependency (`devDependencies`) as it is only designed for testing.
 
 ```bash
-npm i --save-dev jest-canvas-webgl-mock
+npm i --save-dev jest-webgl-canvas-mock
 ```
 
 
 ## Setup
 
-In your `package.json` under the `jest`, create a `setupFiles` array and add `jest-canvas-mock` to the array.
+In your `package.json` under the `jest`, create a `setupFiles` array and add `jest-webgl-canvas-mock` to the array.
 
 ```json
 {
   "jest": {
-    "setupFiles": ["jest-canvas-webgl-mock"]
+    "setupFiles": ["jest-webgl-canvas-mock"]
   }
 }
 ```
 
-If you already have a `setupFiles` attribute you can also append `jest-canvas-mock` to the array.
+If you already have a `setupFiles` attribute you can also append `jest-webgl-canvas-mock` to the array.
 
 ```json
 {
   "jest": {
-    "setupFiles": ["./__setups__/other.js", "jest-canvas-webgl-mock"]
+    "setupFiles": ["./__setups__/other.js", "jest-webgl-canvas-mock"]
   }
 }
 ```
@@ -53,9 +53,9 @@ add the `require` statement to an existing setup file.
 `__setups__/canvas.js`
 
 ```js
-import 'jest-canvas-webgl-mock';
+import 'jest-webgl-canvas-mock';
 // or
-require('jest-canvas-webgl-mock');
+require('jest-webgl-canvas-mock');
 ```
 
 Add that file to your `setupFiles` array:
