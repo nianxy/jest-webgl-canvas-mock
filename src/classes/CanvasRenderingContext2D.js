@@ -85,11 +85,12 @@ export default class CanvasRenderingContext2D {
   _textBaselineStack = ['alphabetic'];
   _transformStack = [[1, 0, 0, 1, 0, 0]];
 
-  constructor(canvas) {
+  constructor(canvas, contextAttributes) {
     testFuncs.forEach(key => {
       this[key] = jest.fn(CanvasRenderingContext2D.prototype[key].bind(this));
     });
     this._canvas = canvas;
+    this._contextAttributes = contextAttributes;
   }
 
   addHitRegion(options = {}) {
@@ -112,6 +113,10 @@ export default class CanvasRenderingContext2D {
         { path, fillRule, id, parentID, cursor, control, label, role },
       ),
     );
+  }
+
+  getContextAttributes() {
+    return this._contextAttributes;
   }
 
   arc(x, y, radius, startAngle, endAngle, anticlockwise = false) {
