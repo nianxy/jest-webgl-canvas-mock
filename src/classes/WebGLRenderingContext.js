@@ -324,7 +324,7 @@ const mockExtensions = {
     'ANGLE_instanced_arrays': null,
     'OES_texture_float_linear': null,
     'OES_texture_half_float_linear': null,
-    'EXT_blend_minmax': null,
+    'EXT_blend_minmax': {},
     'EXT_shader_texture_lod': null,
     // community
     'WEBGL_compressed_texture_atc': null,
@@ -335,8 +335,11 @@ const mockExtensions = {
     'WEBGL_compressed_texture_etc1': null
 };
 
-const mockParams = {
-  34930: 16 // MAX_TEXTURE_IMAGE_UNITS
+var mockParams = {
+  [mockEnums['MAX_TEXTURE_IMAGE_UNITS']]: 16,
+  [mockEnums['VERSION']]: 'WebGL 2.0 (OpenGL ES 3.0 Chromium)',
+  [mockEnums['SCISSOR_BOX']]: new Int32Array(0, 0, 300, 150),
+  [mockEnums['VIEWPORT']]: new Int32Array(0, 0, 300, 150),
 };
 
 export default class WebGLRenderingContext {
@@ -366,5 +369,13 @@ export default class WebGLRenderingContext {
 
   getContextAttributes() {
     return this._contextAttributes;
+  }
+
+  getShaderPrecisionFormat() {
+    return {
+      rangeMin: 127,
+      rangeMax: 127,
+      precision: 23,
+    }
   }
 }
