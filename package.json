@@ -1,12 +1,9 @@
 {
-  "name": "jest-webgl-canvas-mock",
-  "version": "0.2.2",
+  "name": "@oppentech/jest-webgl-canvas-mock",
+  "version": "0.2.3",
   "description": "Mock both 2D and WebGL contexts in Jest.",
   "main": "lib/index.js",
   "types": "types/index.d.ts",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
   "scripts": {
     "test": "jest --no-cache",
     "build": "babel src --out-dir lib",
@@ -53,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamfsk/jest-webgl-canvas-mock.git"
+    "url": "git+https://github.com/nianxy/jest-webgl-canvas-mock.git"
   },
   "keywords": [
     "mock",
@@ -72,7 +69,7 @@
   "author": "adamfsk",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/adamfsk/jest-webgl-canvas-mock/issues"
+    "url": "https://github.com/nianxy/jest-webgl-canvas-mock/issues"
   },
-  "homepage": "https://github.com/adamfsk/jest-webgl-canvas-mock#readme"
+  "homepage": "https://github.com/nianxy/jest-webgl-canvas-mock#readme"
 }
